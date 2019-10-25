@@ -1,42 +1,3 @@
-<!doctype html>
-<html lang="en-US">
-<head>
-    <meta charset="utf-8">
-    <title>{% if page.title %}{{ page.title }} ♥ {{ site.data.global.title }}{% elsif post.title %}{{ post.title }} ♥ {{ site.data.global.title }}{% else %}{{ site.data.global.title }} ♥ {{ site.data.global.description }}{% endif %}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="images/logo/logoSorako.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/toggleQA.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/hes-gallery.css"> 
-    <style type="text/css">
-    .card {
-        width: 50px;
-        height: 195px;
-        background: url("images/logo/Instegram.png") no-repeat;
-        display: inline-block;
-    }
-    .card:hover {
-        background: url("images/logo/Instegram1.png") no-repeat;
-    }
-    .card1 {
-        width: 50px;
-        height: 195px;
-        margin-left: 20px;
-        background: url("images/logo/fb.png") no-repeat;
-        display: inline-block;
-    }
-    .card1:hover {
-        background: url("images/logo/fb1.png") no-repeat;
-    }
-    </style>
-</head>
-<body >
 <!-- header -->
     <header class="site-navbar" style="background-color: white; ">
          <div class="container">
@@ -118,27 +79,6 @@
         </div>
     </header>
 <!-- header END -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/"><i class="fa fa-heart"></i> {{ site.data.global.title }}</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    {% for item in site.data.nav.main %}
-                        <li>
-                            <a href="{{ item.url }}">{{ item.text }}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
-    </nav>
+
 
 
